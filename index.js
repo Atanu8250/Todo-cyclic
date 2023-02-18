@@ -36,7 +36,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(openapiSpecification))
 
 
 app.get("/", (req, res) => {
-    res.send("Welcome to HOME Page\nCheckout 'http://localhost:8080/api-docs' for the api documention")
+    res.send("Welcome to HOME Page\nCheckout '/api-docs' endpoint for the api documention")
 })
 
 app.listen(process.env.port, async () => {
